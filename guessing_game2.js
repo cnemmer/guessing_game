@@ -18,10 +18,12 @@ function ques1() {
 
 	if(question1.toLowerCase() === answers[0] || question1.toLowerCase() === answers[1]) {
 		one.innerHTML = "Yes, I love to Downhill Mountain Bike!";
+		one.className = 'correct';
 		img1.innerHTML = '<img src="img/img1.png" width = "200" />';
 		tally++;		
 	} else {
 		one.innerHTML = "No, I do love to Downhill Mountain Bike!";
+		one.className = 'incorrect';
 	}
 }
 ques1();
@@ -30,10 +32,12 @@ function ques2() {
 	var question2 = prompt(questions[1]);
 	if(question2.toLowerCase() === answers[0] || question2.toLowerCase() === answers[1]) {
 	  two.innerHTML = "That\'s correct, 26 inch tires give you better control!";
+	  two.className = 'correct';
 	  img2.innerHTML = '<img src="img/img2.png" width = "200" />';
 	  tally++;
 	} else {
 		two.innerHTML = "No, I don\'t use 29 inch tires  due to less control.";
+		two.className = 'incorrect';
 	}
 }
 ques2();
@@ -42,10 +46,12 @@ function ques3() {
 	var question3 = prompt(questions[2]);
 	if(question3.toLowerCase() === answers[0] || question3.toLowerCase() === answers[1]) {
 		three.innerHTML = "Yes, 8 inches of travel absorbs more impact!";
+		three.className = 'correct';
 		img3.innerHTML = '<img src="img/img3.jpeg" width = "200" />';
 		tally++;
 	} else {
 		three.innerHTML = "No, 6 inches of travel doesn\'t absorb as much impact as 8 inches";
+		three.className = 'incorrect';
 	}
 }
 ques3();

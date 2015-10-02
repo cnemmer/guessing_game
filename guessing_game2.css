@@ -1,0 +1,19 @@
+body {
+	color : gray ;
+}
+
+h1 {
+	color : red;
+}
+
+p {
+	color : blue;
+}
+
+.correct {
+	color : green;
+}
+
+.incorrect {
+	color : red;
+}
