@@ -11,7 +11,7 @@ var img3 = document.getElementById('img3');
 var questions = ['Do I like to Downhill Mountain Bike?', 
                  'Do I like to Downhill Mountain Bike?',
                  'Is 8 inches more preferred or 6 inchs of travel when downhill riding, yes or no?'];
-var answers =['yes','y','no','n'];
+var answers = ['yes','y','no','n'];
 
 function ques1() {
 	var question1 = prompt(questions[0]);
@@ -36,8 +36,8 @@ function ques2() {
 	  img2.innerHTML = '<img src="img/img2.png" width = "200" />';
 	  tally++;
 	} else {
-		two.innerHTML = "No, I don\'t use 29 inch tires  due to less control.";
-		two.className = 'incorrect';
+	  two.innerHTML = "No, I don\'t use 29 inch tires  due to less control.";
+	  two.className = 'incorrect';
 	}
 }
 ques2();
