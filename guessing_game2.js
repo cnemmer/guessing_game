@@ -4,10 +4,15 @@ var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
 
-function ques1() {
-	var question1 = prompt('Do I like to Downhill Mountain Bike?');
+var questions = ['Do I like to Downhill Mountain Bike?', 
+                 'Do I like to Downhill Mountain Bike?',
+                 'Is 8 inches more preferred or 6 inchs of travel when downhill riding, yes or no?'];
+var answers =['yes','y','no','n'];
 
-	if(question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y')  {
+function ques1() {
+	var question1 = prompt(questions[0]);
+
+	if(question1.toLowerCase() === answers[0] || question1.toLowerCase() === answers[1]) {
 		one.innerHTML = "Yes, I love to Downhill Mountain Bike!";
 		tally++;
 	} else {
@@ -17,8 +22,8 @@ function ques1() {
 ques1();
 
 function ques2() {
-	var question2 = prompt('Do I prefer 26 inch tires over 29 inch tires, yes or no?');
-	if(question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y' )  {
+	var question2 = prompt(questions[1]);
+	if(question2.toLowerCase() === answers[0] || question2.toLowerCase() === answers[1]) {
 	  two.innerHTML = "That\'s correct, 26 inch tires give you better control!";
 	  tally++;
 	} else {
@@ -28,8 +33,8 @@ function ques2() {
 ques2();
 
 function ques3() {
-	var question3 = prompt('Is 8 inches more preferred or 6 inchs of travel when downhill riding, yes or no?');
-	if(question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y')  {
+	var question3 = prompt(questions[2]);
+	if(question3.toLowerCase() === answers[0] || question3.toLowerCase() === answers[1]) {
 		three.innerHTML = "Yes, 8 inches of travel absorbs more impact!";
 		tally++;
 	} else {
